@@ -381,9 +381,23 @@
 </footer>
 <div class="dark"></div>
 <script src="js/coverza.js"></script>
-<script>function showOption(a){window.location.href=a.options[a.selectedIndex].value}function fixed(){topMenu.classList.contains("fixed")&&window.pageYOffset<menuSourceBottom?topMenu.classList.remove("fixed"):window.pageYOffset>menuSourceBottom&&topMenu.classList.add("fixed")}var menu=document.querySelector("select"),topMenu=document.querySelector("nav"),menuSourceBottom=topMenu.getBoundingClientRect().bottom+window.pageYOffset;window.addEventListener("scroll",fixed);</script>
+<script>
+	function showOption(a)
+		{
+			window.location.href=a.options[a.selectedIndex].value}
+			function fixed()
+			{
+				topMenu.classList.contains("fixed")&&window.pageYOffset<menuSourceBottom?topMenu.classList.remove("fixed"):window.pageYOffset>menuSourceBottom&&topMenu.classList.add("fixed")
+			}
+			var menu=document.querySelector("select"),topMenu=document.querySelector("nav"),menuSourceBottom=topMenu.getBoundingClientRect().bottom+window.pageYOffset;window.addEventListener("scroll",fixed);
+</script>
 <script>function isVisible(a){var b=a.getBoundingClientRect(),c=document.documentElement.clientHeight,d=b.top>0&&b.top<c,e=b.bottom<c&&b.bottom>0;return d||e}function showVisible(){for(var a=0;a<special.length;a++){var b=special[a];isVisible(b)&&(b.style.opacity=1)}for(var c=0;c<info.length;c++){var b=info[c];isVisible(b)&&(b.style.opacity=1,b.style.transform="none")}}var special=document.querySelectorAll("p.special"),info=document.querySelectorAll(".contacts .info");window.onscroll=showVisible,showVisible();</script>
 <script>function getTariff(TariffName) {document.getElementById('tariff').value = TariffName;}</script>
-<script>if (document.body.clientWidth<=760){document.getElementById('faq').innerHTML = '<span class="current">FAQ</span>';}</script>
+<script>
+	if (document.body.clientWidth<=760)
+	{
+		document.getElementById('faq').innerHTML = '<span class="current">FAQ</span>';
+	}
+</script>
 </body>
 </html>
