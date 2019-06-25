@@ -616,7 +616,7 @@ main .describe {
 }
 main ul {
 	list-style: none;
-	font-size: 110%;
+	font-size: 17px;
 	margin-bottom: 10px;
 	margin-top: 0;
 	padding-left: 0;
