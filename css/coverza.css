@@ -643,7 +643,7 @@ main li:before {
 	left: 0;
 }
 
-main a.button, .galery a.button, .center a.button {
+main a.button, .galery a.button, .center a.button, .repertoire a.button {
 	display: block;
 	margin: 0 auto;
 	max-width: 210px;
@@ -669,6 +669,11 @@ main a.button, .galery a.button, .center a.button {
 	transform: rotate(180deg);
 	transition: 0.5s;
 }
+.prices span.price{
+	font-size: 28px;
+	font-weight: 800;
+}
+
 .center form, .prices form {
 	display: flex;
 	flex-flow: column nowrap;
@@ -997,6 +1002,32 @@ ul.social li:hover a {
 .why-we i {
 	font-size: 200%;
 	padding-right: 20px;
+}
+/****************************REPERTOIRE***********************/
+section.repertoire {
+	background: #fff;
+}
+
+section.repertoire .rep-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 770px) {
+	section.repertoire .music-genre{
+		width: 140px;
+	}
+}
+
+@media screen and (min-width: 771px) {
+	section.repertoire .music-genre{
+		width: 250px;
+	}
+}
+section.repertoire .music-genre{
+	text-align: center;
 }
 /****************************PRICES***************************/
 .prices {

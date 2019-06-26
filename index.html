@@ -200,14 +200,14 @@
 	</div>
 	<a href="/foto" class="button">Больше фото</a>
 	<div class="modal">
-	    	<div class="modal-content-foto">
-	    		<span class="close">&times;</span>
-	        	<img src="about:blank" alt="">
-	        	<a class="prev">&#10094;</a>
-	        	<a class="next">&#10095;</a>
-	        	<h4>Кавер-группа CoverZa</h4>
-	        </div>
-        </div>
+	    <div class="modal-content-foto">
+	    	<span class="close">&times;</span>
+	        <img src="about:blank" alt="">
+	        <a class="prev">&#10094;</a>
+	        <a class="next">&#10095;</a>
+	        <h4>Кавер-группа CoverZa</h4>
+	    </div>
+    </div>
 </section>	
 
 <main class="basic">
@@ -244,6 +244,34 @@
 	</ul>
 </section>
 
+<section class="basic repertoire">
+	<h3>В<span class="current"> нашем</span> репертуаре</h3>
+	<p class="special">Only hits!</p>
+	<div class="rep-container">
+		<div class="music-genre">
+			<img src="images/music/80.png" alt="">
+			<p>Хиты 80-ых</p>
+		</div>
+		<div class="music-genre">
+			<img src="images/music/90.png" alt="">
+			<p>Хиты 90-ых</p>
+		</div>
+		<div class="music-genre">
+			<img src="images/music/hits.png" alt="">
+			<p>Мировые хиты</p>
+		</div>
+		<div class="music-genre">
+			<img src="images/music/rock.png" alt="">
+			<p>Рок хиты</p>
+		</div>
+		<div class="music-genre">
+			<img src="images/music/love.png" alt="">
+			<p>Лучшие хиты</p>
+		</div>
+	</div>
+	<a href="/music" class="button">Весь репертуар</a>
+</section>
+
 <section class="basic prices">
 	<h3>Наши <span class="current">лучшие</span> цены</h3>
 	<p class="special">Our best offer</p>
@@ -260,7 +288,7 @@
 				<li>Без оборудования</li>
 				<li>Одеваемся как на крутую вечеринку</li>
 			</ul>
-			<p>от 55 000 рублей</p>
+			<p>от <span class="price">55 000</span> рублей</p>
 			<a class="button" href="#" onclick="getTariff('comfort');">Забронировать</a>
 		</div>
 		<div class="card checked">
@@ -275,7 +303,7 @@
 				<li>Бэклайн, звукорежиссер</li>
 				<li>Одеваемся как на премию оскар</li>
 			</ul>
-			<p>от 90 000 рублей</p>
+			<p>от <span class="price">90 000</span> рублей</p>
 			<a class="button" href="#" onclick="getTariff('luxury');">Забронировать</a>
 		</div>
 		<div class="card">
@@ -290,7 +318,7 @@
 				<li>Все оборудование, звукорежиссер</li>
 				<li>Одеваемся как на королевкий прием</li>
 			</ul>
-			<p>от 120 000 рублей</p>
+			<p>от <span class="price">120 000</span> рублей</p>
 			<a class="button" href="#" onclick="getTariff('elite');">Забронировать</a>
 		</div>
 	</div>
