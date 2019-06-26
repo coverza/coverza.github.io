@@ -1018,6 +1018,8 @@ section.repertoire .rep-container {
 @media screen and (max-width: 770px) {
 	section.repertoire .music-genre{
 		width: 140px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
