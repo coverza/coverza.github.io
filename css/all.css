@@ -75,6 +75,9 @@
   
   .fa-search-dollar:before {
   content: "\f688"; }
+
+  .fa-thumbs-up:before {
+    content: "\f164"; }
   
   @font-face {
   font-family: 'Font Awesome 5 Brands';
