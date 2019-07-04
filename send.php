@@ -16,7 +16,7 @@ if($post)
     $subject ="Новая заявка с сайта coverzaband.ru";
     $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
 
-    $message1 ="\n\nИмя: ".$name."\n\Дата мероприятия: " .$date."\n\nТелефон: " .$date."\n\nТариф: " .$tariff."\n\n";	
+    $message1 ="\n\nИмя: ".$name."\n\nДата мероприятия: " .$date."\n\nТелефон: " .$tel."\n\nТариф: " .$tariff."\n\n";	
 
 
     $header = "Content-Type: text/plain; charset=utf-8\n";
