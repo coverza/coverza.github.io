@@ -654,9 +654,16 @@ main a.button, .galery a.button, .center a.button, .repertoire a.button {
 }
 .prices .modal-content-form, .center .modal-content-form {
 	position: relative;
-	width: 260px;
+	width: 280px;
 	padding: 5px 10px;
 }
+
+@media (max-width: 320px) {
+	.prices .modal-content-form, .center .modal-content-form {
+		width: 250px;
+	}
+}
+
 .prices .modal-content-form span, .center .modal-content-form span, .modal-content-video span {
 	font-size: 35px;
 	position: absolute;
