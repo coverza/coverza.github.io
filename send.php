@@ -21,8 +21,8 @@ if($post)
 
     $header = "Content-Type: text/plain; charset=utf-8\n";
 
-    $header .= "From: Новая заявка с сайта <coverzaband@gmail.com>\n\n";	
-    $mail = mail("coverzaband@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
+    $header .= "From: Новая заявка с сайта <info@coverza.ru>\n\n";	
+    $mail = mail("info@coverza.ru", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
 
     if($mail)
     {
