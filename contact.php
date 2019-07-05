@@ -15,7 +15,7 @@ if($post && $check=='secretcode')
 
     $name_tema = "=?utf-8?b?". base64_encode($name) ."?=";
 
-    $subject ="Новая заявка с сайта coverzaband.ru";
+    $subject ="Новая заявка с контактов";
     $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
     $message1 ="\n\nИмя: ".$name."\n\nE-mail: " .$email."\n\nДата мероприятия: " .$date."\n\nСообщение: ".$message."\n\n";	
 
