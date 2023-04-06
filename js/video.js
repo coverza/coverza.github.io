@@ -55,6 +55,31 @@ for (var i=0; i<a.length-2; i++) {
 } 
 }
 
+/******************************* Pop-up ************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+    const videoLinks = document.querySelectorAll(".video-link");
+    const videoPopup = document.getElementById("video-popup");
+    const videoFrame = document.getElementById("video-frame");
+    const closePopup = document.getElementById("close-popup");
+
+    videoLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const videoUrl = link.getAttribute("data-video");
+            videoFrame.setAttribute("src", videoUrl);
+            videoPopup.style.display = "block";
+            document.body.classList.add("modal-open");
+        });
+    });
+
+
+    closePopup.addEventListener("click", () => {
+        videoPopup.style.display = "none";
+        document.body.classList.remove("modal-open");
+        videoFrame.setAttribute("src", "");
+    });
+
+});
 
 
 

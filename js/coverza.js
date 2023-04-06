@@ -246,3 +246,39 @@ mainSpan.onclick = function() {
     var modal = document.getElementsByClassName("modal")[2];
     modal.style.display = "none";
 }
+
+// REVIEWS SECTION SCRIPT
+document.addEventListener('DOMContentLoaded', function () {
+  const prevButton = document.querySelector('.prevButton');
+  const nextButton = document.querySelector('.nextButton');
+  const comments = document.querySelectorAll('.comment');
+  let currentIndex = 2;
+
+  function showComment(index) {
+    comments.forEach((comment, i) => {
+      if (i === index) {
+        comment.style.display = 'flex';
+      } else {
+        comment.style.display = 'none';
+      }
+    });
+  }
+
+  prevButton.addEventListener('click', function () {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = 6;
+    } 
+    showComment(currentIndex);
+  });
+
+  nextButton.addEventListener('click', function () {
+    currentIndex++;
+    if (currentIndex > 6) {
+      currentIndex = 0;
+    }
+    showComment(currentIndex);
+  });
+
+  showComment(currentIndex);
+});
